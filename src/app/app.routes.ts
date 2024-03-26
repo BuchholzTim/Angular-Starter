@@ -1,5 +1,5 @@
 import { CounterComponent } from '@angular-starter/components/counter/counter.component';
-import { StarterComponent } from '@angular-starter/components/starter/starter.component';
+import { HomePageComponent } from '@angular-starter/components/home-page/home-page.component';
 import { TypicodeStoreComponent } from '@angular-starter/components/typicode-with-store/typicode-store.component';
 import { TypicodeComponent } from '@angular-starter/components/typicode/typicode.component';
 import {
@@ -24,7 +24,7 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: StarterComponent,
+        component: HomePageComponent,
       },
       {
         path: 'counter',

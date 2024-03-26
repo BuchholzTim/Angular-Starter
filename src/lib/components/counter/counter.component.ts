@@ -4,6 +4,7 @@ import {
   WritableSignal,
   computed,
   inject,
+  input,
   signal,
 } from '@angular/core';
 
@@ -14,6 +15,7 @@ import {
   standalone: true,
 })
 export class CounterComponent {
+  counterInitial = input.required<number>();
   private readonly helloService = inject(HelloService);
 
   private counter: WritableSignal<number> = signal(0);
