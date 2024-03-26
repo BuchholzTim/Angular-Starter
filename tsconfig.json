@@ -24,7 +24,8 @@
       "@angular-starter/app/*": ["src/app/*"],
       "@angular-starter/types/*": ["src/lib/types/*"],
       "@angular-starter/services/*": ["src/lib/services/*"],
-      "@angular-starter/components/*": ["src/lib/components/*"]
+      "@angular-starter/components/*": ["src/lib/components/*"],
+      "@angular-starter/store/*": ["src/lib/store/*"]
     }
   },
   "angularCompilerOptions": {
