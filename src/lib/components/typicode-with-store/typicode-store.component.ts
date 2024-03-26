@@ -15,6 +15,8 @@ export class TypicodeStoreComponent {
   public users = this.store.selectSignal(selectUsers);
   public userCount = computed(() => this.users().length);
 
+  public firstFiveUsers = computed(() => this.users().slice(0, 5));
+
   constructor() {
     effect(() => console.log(this.userCount()));
   }

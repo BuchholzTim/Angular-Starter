@@ -1,3 +1,6 @@
 <button (click)="refresh()">Fetch Users</button>
-
-<pre>{{ users() | json }}</pre>
+@if (users().length > 0) {
+  <pre>{{ firstFiveUsers() | json }}</pre>
+} @else {
+  <p>No users found</p>
+}
